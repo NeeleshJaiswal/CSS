@@ -14,5 +14,13 @@ FontAwesomes Icons
 text-shadow, box-shadow
 
 Browser Prefixes
+    -webkit-  is used for chrome
+    -moz-     is used for mozzilla
+
+    Autoprefixer CSS onlie site is so use full for prefixer
+    also box shadow generator and text shadow generator site are also being used for developement
+
 Semantic HTML
+    <header>, <nav>, <section>, <article>, <aside>, <footer> ... etc.
+
 EmmetSnippets
