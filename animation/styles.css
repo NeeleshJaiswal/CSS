@@ -1,0 +1,89 @@
+/* 
+Transition 0 = 100%
+Animation 0 1% 2% 3%.....100% 
+*/
+
+
+div{
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    color: white;
+}
+
+.transition {
+    background: red;
+    transition: all 2s linear;
+}
+
+.transition:hover {
+    background: yellow;
+    transform: translateX(100px);
+}
+
+.animation {
+    background: blue;
+    /* animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: 2; 
+    short hand for above commented code
+    infinite can be used for infinite animation iteration
+    */
+    animation: move 5s;
+}
+
+@keyframes move {
+    0%{
+        transform: translateX(0px);
+    }
+
+    25%{
+        transform: translateX(100px);
+        background: cadetblue;
+    }
+    50%{
+        transform: translateY(100px);
+        background: crimson;
+    }
+    75%{
+        transform: translateX(-100px);
+        background: darkgreen;    }
+    100%{
+        transform: translateY(-100px);
+        background: blue;
+    }
+
+}
+
+/* --------------------------- */
+
+/* 
+animation-fill-mode: what values are applied by the 
+animation outside the time it is executing
+*/
+
+.animation2 {
+    background: blue;
+    animation: move2 5s 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move2 {
+    0%{
+        opacity: 0;
+    }
+
+    25%{
+        transform: translateX(200px);
+        opacity: 0.25;
+    }
+    50%{
+        transform: translateX(-100px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+
+}

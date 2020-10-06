@@ -1,0 +1,36 @@
+/* 
+transition: change over time
+transition-property:
+transition-duration:
+transition-delay:
+*/
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+div:hover {
+    
+}
+.one{
+    background: red;
+}
+.two{
+    background: green;
+}
+.three{
+    background: blue;
+    /* transition-property: background, border-radius, font-weight;
+    transition-duration: 4s;
+    transition-delay: 3s; */
+    /* shorthand - transition:  transition-property  transition-duration transition-delay(optional)*/
+    transition: background 4s 2s, border-radius 6s;
+    /* if all property should be executed with one entry
+    transition: all 4s 2s;
+    */
+}
+.three:hover{
+    background: coral;
+    border-radius: 50%;
+}
