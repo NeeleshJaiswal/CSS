@@ -1,0 +1,45 @@
+
+
+div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+}
+
+.one{
+    background: red;
+    transform: translateX(50%);
+    /* transform: scale(2, 3); */
+
+}
+.two{
+    background: green;
+    /* transform: translateY(30px); */
+    /* transform: rotateZ(45deg); */
+    transform: rotate
+}
+.three{
+    background: blue;
+    /* transform: translateZ(30px); */
+    /* use multiple direction value translate(x, y) 
+    x, y value can be % positive and negative value
+    */
+    transform: translate(200px, 300px);
+}
+
+/* 
+translate is a function
+traslateX() Y()
+will shift the component on respective direction
+
+scale is also a function will inscrease size in respective direction
+
+scaleX() scaleY()
+
+rotate is function to rotate the components in degree
+rotateX(), rotateY(), rotateZ() will rotate the component in 
+thier respctive direction 
+
+scew() will responsible for skewing the component in only x and y direction
+
+*/
